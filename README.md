@@ -1,6 +1,6 @@
 # Aniket's Portfolio
 
-A modern, responsive portfolio website showcasing my projects and skills as a Full Stack Developer.
+A modern, responsive portfolio website showcasing projects and skills as a Full Stack Developer specializing in Java backend, Spring Boot, cloud-native services, and Data Structures & Algorithms.
 
 ## 🚀 Features
 
@@ -20,47 +20,9 @@ A modern, responsive portfolio website showcasing my projects and skills as a Fu
 - **Image Processing**: Jimp
 - **Code Quality**: ESLint
 
-## 📦 Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/ani8727/my-portfolio.git
-
-# Navigate to project directory
-cd my-portfolio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 🌟 Projects Featured
-
-1. **Fitness App Microservice** - Scalable Spring Boot application
-2. **Patient Management Service** - Healthcare management system
-3. **DSA Pattern Wise** - Curated algorithm problems collection
-4. **DSA Learning Hub** - Interactive learning platform
-5. **DSA Practice Sheet** - Topic-wise problem tracker
-6. **Jarvis Assistant** - AI-powered voice assistant
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-# Aniket's Portfolio
-
-Personal portfolio for Aniket Gupta — Full Stack Developer focused on Java backend, Spring Boot, cloud-native services, and Data Structures & Algorithms.
-
----
-
 ## Quick Links
 
-- Repository: https://github.com/ani8727/my-portfolio
+- Repository: [ani8727/my-portfolio](https://github.com/ani8727/my-portfolio)
 - Live site: (add your deployed URL here)
 
 **Preview:** (update this URL after you deploy)
@@ -132,15 +94,15 @@ npm run preview
 Follow these steps before deploying to production to ensure reliability, SEO and best practices:
 
 1. Finalize `package.json` scripts (Vite is already configured):
-	 - `dev`, `build`, `preview` are present.
+   - `dev`, `build`, `preview` are present.
 2. Confirm `public/manifest.json`, `sitemap.xml`, `robots.txt`, and favicon files exist (done).
 3. Verify all internal links are relative and use the correct `base` if deploying to a subpath.
 4. Test the production build locally with `npm run build` then `npm run preview`.
 5. Add environment configuration if you use secrets (none required for this static portfolio).
 6. Configure hosting platform (recommended):
-	 - **Vercel**: auto-deploy from GitHub (recommended for React + Vite). Use default build command `npm run build` and output `dist`.
-	 - **Netlify**: set build command `npm run build` and publish directory `dist`.
-	 - **GitHub Pages**: requires adapter to deploy `dist` branch or use `gh-pages` package and set `homepage` in `package.json`.
+   - **Vercel**: auto-deploy from GitHub (recommended for React + Vite). Use default build command `npm run build` and output `dist`.
+   - **Netlify**: set build command `npm run build` and publish directory `dist`.
+   - **GitHub Pages**: requires adapter to deploy `dist` branch or use `gh-pages` package and set `homepage` in `package.json`.
 7. (Optional) Add GitHub Actions for CI — run `npm ci` and `npm run build` on pushes to `main`.
 
 Sample minimal GitHub Actions workflow to build on push (add to `.github/workflows/build.yml`):
@@ -149,18 +111,18 @@ Sample minimal GitHub Actions workflow to build on push (add to `.github/workflo
 name: Build
 on: [push]
 jobs:
-	build:
-		runs-on: ubuntu-latest
-		steps:
-			- uses: actions/checkout@v4
-			- name: Set up Node
-				uses: actions/setup-node@v4
-				with:
-					node-version: '20'
-			- name: Install
-				run: npm ci
-			- name: Build
-				run: npm run build
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
 ```
 
 ---
@@ -191,8 +153,8 @@ If you'd like any of the above, tell me which item to do next and I will impleme
 
 ## 📫 Contact
 
-Connect via the contact form on the site or GitHub: https://github.com/ani8727
+Connect via the contact form on the site or [GitHub](https://github.com/ani8727).
 
 ---
 
-*Last updated: 2025-12-12*
+### Last updated: 2025-12-12
