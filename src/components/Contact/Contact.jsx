@@ -1,107 +1,163 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { AiOutlineSend } from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
   const [notDone, setNotDone] = useState(false);
-  const [formData, setFormData] = useState({});
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setDone(false);
+  const validateForm = () => {
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
+    const title = form.current.title.value.trim();
+
+    if (!name || !email || !title) {
+      setNotDone(true);
+      setDone(false);
+      return false;
+    }
+
     setNotDone(false);
+    return true;
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!formData.from_name || !formData.reply_to || !formData.message) {
-      setNotDone(true);
-    } else {
-      emailjs
-        .sendForm(
-          "service_niilndo",
-          "template_6z5idye",
-          form.current,
-          "VOBt6Akm1LhI5CZG-"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setDone(true);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+    if (!validateForm()) {
+      return;
     }
+
+    // Get values from form inputs directly
+    const name = form.current.from_name?.value?.trim();
+    const email = form.current.reply_to?.value?.trim();
+    const message = form.current.message?.value?.trim();
+    const title = form.current.title?.value?.trim(); // Get the subject field value
+
+    console.log("Name:", name, "Email:", email, "Message:", message, "Title:", title);
+
+    // Debugging log to inspect the values of all fields
+    console.log("Field Values:", {
+      name: form.current.name?.value?.trim(),
+      email: form.current.email?.value?.trim(),
+      title: form.current.title?.value?.trim(),
+      message: form.current.message?.value?.trim(),
+    });
+
+    setNotDone(false);
+    
+    console.log("Form Data:", {
+      from_name: name,
+      reply_to: email,
+      message: message,
+      title: title, // Include the subject field in the form data
+    });
+
+    emailjs
+      .sendForm(
+        "service_br9v1qe",
+        "template_y3khocr",
+        form.current,
+        "NXoVXoETzx_Thvzn1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          setNotDone(true);
+          setDone(false);
+          console.error("EmailJS Error:", error);
+        }
+      );
   };
 
   return (
-    <section className="relative bg-gray-900 text-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
-        {/* Left side */}
-        <div className="flex-1 text-center md:text-left space-y-4">
-          <h1 className="text-4xl font-bold">Get in Touch</h1>
-          <h1 className="text-4xl font-bold text-yellow-500">Contact Me</h1>
+    <div className="bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-xl p-6 shadow-2xl backdrop-blur">
+      <h2 className="text-xl font-bold mb-4 text-yellow-400">Send Me a Message</h2>
+      
+      <form ref={form} onSubmit={sendEmail} className="space-y-4">
+        {/* Name Input */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-300 mb-2">Name</label>
+          <input
+            type="text"
+            name="name" // Updated field name
+            placeholder="Your full name"
+            className="w-full px-4 py-3 rounded-lg border-2 border-purple-700/30 bg-purple-900/20 text-white placeholder-gray-500 text-base outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300"
+          />
         </div>
 
-        {/* Right side */}
-        <div className="flex-1">
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="flex flex-col gap-6 items-center"
-          >
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Name"
-              onChange={handleChange}
-              className="w-96 max-w-full px-4 py-2 rounded-lg border-2 border-purple-800 bg-purple-900 text-white text-lg outline-none focus:ring-2 focus:ring-purple-500"
-            />
-            <input
-              type="email"
-              name="reply_to"
-              placeholder="Email"
-              onChange={handleChange}
-              className="w-96 max-w-full px-4 py-2 rounded-lg border-2 border-purple-800 bg-purple-900 text-white text-lg outline-none focus:ring-2 focus:ring-purple-500"
-            />
-            <textarea
-              name="message"
-              placeholder="Message"
-              onChange={handleChange}
-              className="w-96 max-w-full h-32 px-4 py-2 rounded-lg border-2 border-purple-800 bg-purple-900 text-white text-lg outline-none focus:ring-2 focus:ring-purple-500 resize-none"
-            />
-
-            {notDone && (
-              <span className="text-red-500 text-lg">
-                Please, fill all the input fields
-              </span>
-            )}
-
-            <button
-              type="submit"
-              disabled={done}
-              className="flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg text-white font-semibold transition-colors duration-300 disabled:opacity-50"
-            >
-              <AiOutlineSend className="mr-2" />
-              Send
-            </button>
-
-            {done && (
-              <span className="text-green-500 text-lg text-center">
-                Thanks for contacting me! I have received your message. If you
-                are testing, it works perfectly fine. For serious queries, I
-                will reply soon. You can also reach me on LinkedIn.
-              </span>
-            )}
-          </form>
+        {/* Email Input */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-300 mb-2">Email</label>
+          <input
+            type="email"
+            name="email" // Updated field name
+            placeholder="your.email@example.com"
+            className="w-full px-4 py-3 rounded-lg border-2 border-purple-700/30 bg-purple-900/20 text-white placeholder-gray-500 text-base outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300"
+          />
         </div>
-      </div>
-    </section>
+
+        {/* Subject Input - New Field */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-300 mb-2">Subject</label>
+          <input
+            type="text"
+            name="title" // Added subject field
+            placeholder="Subject"
+            className="w-full px-4 py-3 rounded-lg border-2 border-purple-700/30 bg-purple-900/20 text-white placeholder-gray-500 text-base outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300"
+          />
+        </div>
+
+        {/* Message Input */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-300 mb-2">Message</label>
+          <textarea
+            name="message" // Updated field name
+            placeholder="Tell me about your project, inquiry, or anything else..."
+            className="w-full h-36 px-4 py-3 rounded-lg border-2 border-purple-700/30 bg-purple-900/20 text-white placeholder-gray-500 text-base outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30 transition-all duration-300 resize-none"
+          ></textarea>
+        </div>
+
+        {/* Error Message */}
+        {notDone && (
+          <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+            <p className="text-red-300 text-sm font-semibold">
+              ❌ Please fill in all fields before sending
+            </p>
+          </div>
+        )}
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={done}
+          className="w-full bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 disabled:from-gray-500 disabled:to-gray-600 px-6 py-3 rounded-lg text-white font-bold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-indigo-500/50 transform hover:scale-105 disabled:hover:scale-100"
+        >
+          <AiOutlineSend className="text-lg" />
+          {done ? "Message Sent!" : "Send Message"}
+        </button>
+
+        {/* Success Message */}
+        {done && (
+          <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
+            <div className="flex items-start gap-3">
+              <AiOutlineCheckCircle className="text-green-400 text-xl shrink mt-0.5" />
+              <div>
+                <p className="text-green-300 font-semibold mb-1">Message sent successfully! 🎉</p>
+                <p className="text-green-300/80 text-sm">Thanks for reaching out! I've received your message and will get back to you as soon as possible. Typically within 24-48 hours.</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </form>
+    </div>
   );
 };
 

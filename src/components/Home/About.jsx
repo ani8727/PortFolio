@@ -1,68 +1,102 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import LaptopImg from "../../assets/home-main.svg";
-import {
-  AiFillGithub,
-  AiOutlineTwitter
-} from "react-icons/ai";
+import AboutImg from "../../assets/about.png";
+import resumePdf from "../../assets/resume.pdf";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const About = () => {
   const socialLinks = [
-    { icon: <AiFillGithub size={28} />, href: "https://github.com/19sajib", label: "GitHub" },
-    { icon: <AiOutlineTwitter size={28} />, href: "https://twitter.com/19sajib", label: "Twitter" },
-    { icon: <FaLinkedinIn size={28} />, href: "https://www.linkedin.com/in/19sajib/", label: "LinkedIn" },
-    { icon: <SiLeetcode size={28} />, href: "https://leetcode.com/19sajib/", label: "LeetCode" },
+    { icon: <AiFillGithub size={28} />, href: "https://github.com/ani8727", label: "GitHub" },
+    { icon: <AiOutlineTwitter size={28} />, href: "#", label: "Twitter" },
+    { icon: <FaLinkedinIn size={28} />, href: "https://www.linkedin.com/in/aniket-gupta-ani8727/", label: "LinkedIn" },
+    { icon: <SiLeetcode size={28} />, href: "https://leetcode.com/Aniket_01_gupta/", label: "LeetCode" },
   ];
 
   return (
-    <section id="about" className="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left - Text */}
-        <div className="lg:w-2/3 space-y-6">
+    <section id="about" className="bg-linear-to-b from-slate-800 to-slate-900 text-white py-12 pb-0 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-6">
+
+        {/* Left */}
+        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left px-4 lg:px-0">
           <h1 className="text-4xl font-bold">
             LET ME <span className="text-yellow-500">INTRODUCE</span> MYSELF
           </h1>
 
           <p className="text-lg leading-relaxed">
-            Hi, my name is <span className="text-yellow-500 font-semibold">Md Abu Bakkar Siddiqe Sajib</span> and I'm from <span className="text-yellow-500 font-semibold">Dhaka, Bangladesh.</span>
-            <br /><br />
-            I recently graduated with a Bachelor's degree in Computer Science and Engineering in 2021.
-            <br /><br />
-            As a <b className="text-yellow-500">Full-Stack</b> developer, I enjoy tackling new challenges and continuously expanding my skillset.
-            <br /><br />
-            I am proficient in <b className="text-yellow-500">Javascript</b>, and have knowledge in C, Java, Python, <b className="text-yellow-500">GraphQL, and Solidity</b>.
-            <br /><br />
-            I have a passion for working with <b className="text-yellow-500">Node.js, MongoDB</b> and modern Javascript libraries and frameworks like <b className="text-yellow-500">React.js</b>.
-            <br /><br />
-            I am also interested in building new <b className="text-yellow-500">Web Technologies and Products</b> and exploring areas related to <b className="text-yellow-500">Artificial Intelligence</b>.
+            Hi, I’m <span className="text-yellow-500 font-semibold">Aniket Gupta</span> from 
+            <span className="text-yellow-500 font-semibold"> Ludhiana, India</span>.  
+            I am a final-year Software Engineering student focused on building reliable, scalable, and modern applications.  
+            My core expertise lies in Java, Spring Boot, RESTful APIs, and full-stack solution engineering.
           </p>
+
+          <p className="text-lg leading-relaxed">
+            I enjoy transforming problem statements into efficient engineering solutions.  
+            With strong fundamentals in Data Structures and Algorithms, I prioritize clean architecture, performance optimization, and production-ready code.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <ul className="list-disc pl-5 text-gray-300">
+              <li><strong className="text-yellow-400">Frontend:</strong> React.js, Redux, Tailwind CSS</li>
+              <li><strong className="text-yellow-400">Backend:</strong> Java, Spring Boot, RESTful Services</li>
+            </ul>
+            <ul className="list-disc pl-5 text-gray-300">
+              <li><strong className="text-yellow-400">Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
+              <li><strong className="text-yellow-400">Other Tools:</strong> Docker, AWS, CI/CD, Keycloak, RabbitMQ</li>
+            </ul>
+          </div>
+
+          <p className="text-lg leading-relaxed">
+            I am continuously exploring cloud technologies, distributed systems, and DevOps practices 
+            to expand my capabilities as a modern software engineer.
+          </p>
+
+          <div className="mt-4 flex justify-center lg:justify-start gap-3">
+            <a href={resumePdf} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-2 px-4 rounded">
+              Download Resume
+            </a>
+            <a href="/contact" className="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 font-semibold py-2 px-4 rounded">
+              Contact Me
+            </a>
+          </div>
         </div>
 
-        {/* Right - Avatar */}
-        <div className="lg:w-1/3">
-          <Tilt>
-            <img src={LaptopImg} alt="avatar" className="rounded-lg w-full h-auto shadow-lg" />
-          </Tilt>
+        {/* Right */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center lg:justify-end px-4 lg:px-0">
+          <div className="w-full h-64 sm:h-96 lg:h-full overflow-hidden rounded-md shadow-sm">
+            <img
+              src={AboutImg}
+              alt="About - Aniket Gupta"
+              className="w-full h-full object-cover filter contrast-95 brightness-90"
+              style={{ objectPosition: 'center 25%' }}
+            />
+          </div>
         </div>
       </div>
 
-      {/* Social Links */}
-      <div className="mt-12 text-center">
-        <h2 className="text-3xl font-bold mb-2">FIND ME ON</h2>
-        <p className="mb-4">
-          Please don't hesitate to reach out to me and <span className="text-yellow-500 font-semibold">connect.</span>
+      {/* Social - Connect Section with Different Background */}
+      <div className="mt-12 -mx-4 sm:-mx-6 lg:-mx-8 text-center bg-linear-to-br from-slate-900/50 via-indigo-900/30 to-slate-900/50 backdrop-blur-sm p-8 border-t border-slate-700/50 shadow-xl">
+        <h2 className="text-3xl font-bold mb-2 text-white">
+          FIND <span className="text-yellow-400">ME</span> ON
+        </h2>
+
+        <p className="mb-6 text-lg text-gray-300">
+          I am open to professional opportunities, collaborations, and networking.  
+          Feel free to connect through the platforms below.
         </p>
+
         <ul className="flex justify-center gap-6">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
-                target="_blank"
-                rel="noreferrer"
+                onClick={(e) => { if (link.label === 'Twitter') e.preventDefault(); }}
+                target={link.label === 'Twitter' ? undefined : "_blank"}
+                rel={link.label === 'Twitter' ? undefined : "noreferrer"}
                 aria-label={link.label}
-                className="text-white hover:text-yellow-500 transition-colors duration-300"
+                className={`text-gray-200 transition-colors duration-300 ${link.label === 'Twitter' ? 'opacity-60 cursor-default' : 'hover:text-yellow-400'}`}
+                aria-disabled={link.label === 'Twitter'}
               >
                 {link.icon}
               </a>

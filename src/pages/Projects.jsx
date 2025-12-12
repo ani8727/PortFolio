@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
+import p1 from "../assets/projects/p1.svg";
+import p2 from "../assets/projects/p2.svg";
+import p3 from "../assets/projects/p3.svg";
+import p4 from "../assets/projects/p4.svg";
+import p5 from "../assets/projects/p5.svg";
+import p6 from "../assets/projects/p6.svg";
 
 const Projects = () => {
   return (
@@ -26,52 +27,55 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
-            imgPath={lift}
+            imgPath={p1}
             isBlog={false}
-            title="Lift-Buddy"
-            description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-            ghLink="https://github.com/19sajib/lift-buddy"
+            title="Fitness App Microservice"
+            description="A scalable microservices-based fitness application built with Spring Boot. Features user management, workout tracking, and real-time progress monitoring with a robust backend architecture. Implements RESTful APIs, service discovery, and load balancing for optimal performance and reliability."
+            ghLink="https://github.com/ani8727/fitness_app_microservice"
+            demoLink="https://fitness-app-demo.com"
           />
 
           <ProjectCard
-            imgPath={project}
+            imgPath={p2}
             isBlog={false}
-            title="Social Media"
-            description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-            ghLink="https://github.com/19sajib/social-media"
+            title="Patient Management Service"
+            description="A comprehensive healthcare management system designed for efficient patient data handling. Built with Spring Boot and includes appointment scheduling, medical records management, and patient tracking features. Implements secure authentication, role-based access control, and seamless integration with hospital databases."
+            ghLink="https://github.com/ani8727/Patient-Management-Service"
+            demoLink="https://patient-management-demo.com"
           />
 
           <ProjectCard
-            imgPath={kickstart}
+            imgPath={p3}
             isBlog={false}
-            title="E‑Commerce Website"
-            description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-            ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+            title="DSA Pattern Wise"
+            description="A curated collection of Data Structures and Algorithms problems organized by common coding patterns. Includes solutions in C++ & algorithms with detailed explanations, time-space complexity analysis, and pattern recognition techniques to help master problem-solving for technical interviews."
+            ghLink="https://github.com/ani8727/DSA-Pattern_Wise"
           />
 
           <ProjectCard
-            imgPath={pg}
+            imgPath={p4}
             isBlog={false}
-            title="Blog Website"
-            description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-            ghLink="https://github.com/19sajib/mern-blog-app"
+            title="DSA Learning Hub"
+            description="An interactive learning platform for Data Structures and Algorithms. Features comprehensive tutorials, practice problems, and visual explanations to build strong DSA fundamentals. Covers essential topics from basic arrays to advanced dynamic programming and graph algorithms."
+            ghLink="https://github.com/ani8727/DSA_Learing_Hub"
+            demoLink="https://ani8727.github.io/DSA_Learing_Hub/"
           />
 
           <ProjectCard
-            imgPath={krypto}
+            imgPath={p5}
             isBlog={false}
-            title="Project Krypto"
-            description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-            ghLink="https://github.com/19sajib/Project-Krypto-Web-3.0"
-            demoLink="https://project-krypto.netlify.app/"
+            title="DSA Sheet - Topic Wise"
+            description="A well-organized DSA practice sheet categorized by topics for systematic learning. Includes carefully selected problems covering arrays, strings, linked lists, trees, graphs, dynamic programming, and more. Features multiple difficulty levels and optimal solutions with detailed explanations."
+            ghLink="https://github.com/ani8727/DSA-Sheet---topic-wise"
           />
 
           <ProjectCard
-            imgPath={kickstart}
+            imgPath={p6}
             isBlog={false}
-            title="Solidity Kickstart"
-            description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-            ghLink="https://github.com/19sajib/Solidity-Kickstart"
+            title="Jarvis Assistant"
+            description="An intelligent voice-activated assistant inspired by JARVIS from Iron Man. Built with Python featuring speech recognition, natural language processing, and automation capabilities. Performs tasks like web searches, system commands, weather updates, email automation, and more through voice commands."
+            ghLink="https://github.com/ani8727/jarvish_assistant"
+            demoLink="https://jarvish-assistant.vercel.app/"
           />
         </div>
       </div>

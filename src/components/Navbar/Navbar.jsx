@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/sLogo.png";
+import nLogo from "../../assets/nLogo.png";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -11,15 +11,9 @@ import { CgFileDocument } from "react-icons/cg";
 
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [sticky, setSticky] = useState(false);
   const location = useLocation();
 
-  // Handle sticky navbar on scroll
-  useEffect(() => {
-    const handleScroll = () => setSticky(window.scrollY >= 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  
 
   // Safely close mobile menu on route change
   useEffect(() => {
@@ -35,26 +29,33 @@ const NavBar = () => {
     { path: "/contact", label: "Contact Me", icon: <AiOutlineContacts className="inline mb-1" /> },
   ];
 
+  // Make navbar background consistently dark (same before/after scroll)
+  const linkTextClass = "text-white hover:text-yellow-400";
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${sticky ? "bg-purple-900 shadow-lg" : "bg-transparent"}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 bg-indigo-900/98 shadow-lg`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="shrink-0">
-            <Link to="/">
-              <img className="h-10 w-auto" src={logo} alt="logo" />
-            </Link>
+              <Link to="/" className="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded -ml-1">
+                {/* show the wordmark directly (no square box) and size to navbar height */}
+                <img src={nLogo} alt="Aniket logo" className="h-16 sm:h-20 object-contain block" />
+                {/* small yellow mark */}
+                <span className={`hidden sm:inline-block w-3 h-3 rounded-full bg-yellow-400`}></span>
+              </Link>
           </div>
           {/* Mobile menu button */}
           <div className="flex md:hidden">
             <button
               onClick={() => setNavOpen(!navOpen)}
-              className="text-white focus:outline-none"
+              className={`focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded`}
+              aria-label={navOpen ? "Close menu" : "Open menu"}
             >
               <div className="space-y-1">
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white"></span>
+                <span className={`block w-6 h-0.5 bg-white`}></span>
+                <span className={`block w-6 h-0.5 bg-white`}></span>
+                <span className={`block w-6 h-0.5 bg-white`}></span>
               </div>
             </button>
           </div>
@@ -65,7 +66,7 @@ const NavBar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block md:inline-block text-white hover:text-yellow-400 px-3 py-2 rounded-md font-medium ${
+                className={`block md:inline-block ${linkTextClass} px-3 py-2 rounded-md font-medium ${
                   location.pathname === item.path ? "text-yellow-400" : ""
                 }`}
               >

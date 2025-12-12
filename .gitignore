@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Env files and secrets
+.env
+.env.*
+
+# Cache and build artifacts
+.cache
+.parcel-cache
+.turbo
+.next
+coverage
+build
+
+# OS files
+Thumbs.db
+.DS_Store

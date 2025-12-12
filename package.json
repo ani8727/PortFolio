@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "jimp": "^1.6.0",
+    "pdfjs-dist": "5.4.296",
+    "pngjs": "^7.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-github-calendar": "^5.0.0",
@@ -20,6 +23,7 @@
     "react-pdf": "^10.2.0",
     "react-router-dom": "^7.10.1",
     "react-tsparticles": "^2.12.2",
+    "sharp": "^0.34.5",
     "tsparticles": "^3.9.1",
     "typewriter-effect": "^2.22.0"
   },
