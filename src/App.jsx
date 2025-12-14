@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
+  useNavigate
 } from "react-router-dom";
 
 import Home from './pages/Home';
@@ -20,8 +21,9 @@ import ScrollToTop from "./components/ScrollToTop";
 // Tailwind CSS
 import "./index.css";
 
-function App() {
+function AppContent() {
   const [load, updateLoad] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,8 +33,18 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Handle redirect from 404.html
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath) {
+      sessionStorage.removeItem('redirectPath');
+      const cleanPath = redirectPath.replace('/my-portfolio', '');
+      navigate(cleanPath || '/', { replace: true });
+    }
+  }, [navigate]);
+
   return (
-    <Router>
+    <>
       {/* Preloader */}
       <Preloader load={load} />
 
@@ -53,6 +65,14 @@ function App() {
 
         <Footer />
       </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
