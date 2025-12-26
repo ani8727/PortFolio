@@ -56,7 +56,7 @@ const About = () => {
             <a href={resumePdf} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-2 px-4 rounded">
               Download Resume
             </a>
-            <a href="/contact" className="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 font-semibold py-2 px-4 rounded">
+            <a href="#/contact" className="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 font-semibold py-2 px-4 rounded">
               Contact Me
             </a>
           </div>

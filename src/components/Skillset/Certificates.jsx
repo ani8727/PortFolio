@@ -6,69 +6,63 @@ const Certificates = () => {
   const achievements = [
     {
       id: 1,
-      title: "Full Stack Web Development",
-      issuer: "Udemy",
-      date: "2024",
+      title: "Data Visualization: Empowering Business with Effective Insights",
+      issuer: "Forage",
       type: "certificate",
       icon: <FaCertificate />,
-      color: "from-blue-500 to-cyan-500",
-      pdfLink: "#", // Replace with actual PDF link
-      credentialLink: "#", // Replace with credential verification link
+      color: "from-indigo-500 to-blue-500",
+      pdfLink: "/PortFolio/certificates/business-analytics-data-visualization-forage.pdf",
+      credentialLink: "https://verify.forage.com/Zcah5TjEnErFFpMuf",
     },
     {
       id: 2,
-      title: "React Advanced Patterns",
-      issuer: "Coursera",
-      date: "2024",
+      title: "Foundation of Cloud IoT Edge ML",
+      issuer: "NPTEL",
       type: "certificate",
       icon: <FaCertificate />,
-      color: "from-purple-500 to-pink-500",
-      pdfLink: "#",
+      color: "from-teal-500 to-cyan-500",
+      pdfLink: "/PortFolio/certificates/foundation-cloud-computing.pdf",
       credentialLink: "#",
     },
     {
       id: 3,
-      title: "Blockchain Development Internship",
-      issuer: "Tech Company XYZ",
-      date: "2023",
-      type: "internship",
-      icon: <AiOutlineTrophy />,
-      color: "from-orange-500 to-red-500",
-      pdfLink: "#",
+      title: "TCS iON Career Edge - Young Professional",
+      issuer: "TCS iON",
+      type: "certificate",
+      icon: <FaCertificate />,
+      color: "from-green-500 to-teal-400",
+      pdfLink: "/PortFolio/certificates/tcs-ion-career-edge.pdf",
       credentialLink: "#",
     },
     {
       id: 4,
-      title: "Research Paper: AI in Web Development",
-      issuer: "IEEE Conference",
-      date: "2023",
-      type: "research",
-      icon: <FaResearchgate />,
-      color: "from-green-500 to-teal-500",
-      pdfLink: "#",
-      credentialLink: "#",
+      title: "Using Intelligent Information Systems in AI",
+      issuer: "OnWingspan",
+      type: "certificate",
+      icon: <FaCertificate />,
+      color: "from-sky-500 to-indigo-500",
+      pdfLink: "/PortFolio/certificates/stress-management-virtual-assistant.pdf",
+      credentialLink: "https://verify.onwingspan.com",
     },
     {
       id: 5,
-      title: "Best Project Award",
-      issuer: "College Technical Fest",
-      date: "2023",
-      type: "award",
-      icon: <FaAward />,
-      color: "from-yellow-500 to-orange-500",
-      pdfLink: "#",
-      credentialLink: "#",
+      title: "What is Data Science?",
+      issuer: "IBM (Coursera)",
+      type: "certificate",
+      icon: <FaCertificate />,
+      color: "from-purple-500 to-pink-500",
+      pdfLink: "/PortFolio/certificates/data-science-foundations-ibm.pdf",
+      credentialLink: "https://coursera.org/verify/KFLQHRF7US2C",
     },
     {
       id: 6,
-      title: "Certificate in AI and Machine Learning",
-      issuer: "College Technical Fest",
-      date: "2023",
-      type: "award",
-      icon: <FaAward />,
-      color: "from-yellow-500 to-orange-500",
-      pdfLink: "#",
-      credentialLink: "#",
+      title: "Solidity Smart Contracts: Build DApps in Ethereum Blockchain",
+      issuer: "OnWingspan",
+      type: "certificate",
+      icon: <FaCertificate />,
+      color: "from-indigo-500 to-blue-500",
+      pdfLink: "/PortFolio/certificates/certificate-6.pdf",
+      credentialLink: "https://verify.onwingspan.com",
     },
   ];
 
@@ -112,19 +106,20 @@ const Certificates = () => {
                 {achievement.title}
               </h3>
               <p className="text-gray-400 text-xs font-semibold">{achievement.issuer}</p>
-              <p className="text-gray-500 text-[10px]">{achievement.date}</p>
             </div>
 
             {/* Action Buttons */}
             <div className="flex gap-2 mt-4">
               <a
                 href={achievement.pdfLink}
+                download
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-1.5 bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-xs font-semibold py-1.5 px-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                title="View or download PDF"
               >
                 <AiOutlineFilePdf className="text-sm" />
-                View PDF
+                View / Download
               </a>
               <a
                 href={achievement.credentialLink}

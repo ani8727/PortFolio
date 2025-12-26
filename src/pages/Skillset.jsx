@@ -69,23 +69,23 @@ const Skillset = () => {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">✦</span>
-                    <span className="text-sm">Solved 500+ DSA problems across platforms</span>
+                    <span className="text-sm">Solved 350+ DSA problems across platforms</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">✦</span>
-                    <span className="text-sm">Built 15+ full-stack MERN applications</span>
+                    <span className="text-sm">Research Paper: Stress Management Virtual Assistant - AI-based solution for mental wellness [YMER240327]</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">✦</span>
-                    <span className="text-sm">5-star Java rating on HackerRank</span>
+                    <span className="text-sm">React & IoT Certificates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">✦</span>
-                    <span className="text-sm">Deployed 10+ apps on AWS & Azure</span>
+                    <span className="text-sm">Summer Training - Full-stack Development</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">✦</span>
-                    <span className="text-sm">20+ hackathons participation</span>
+                    <span className="text-sm">Strong foundation in Java, C++ & DSA</span>
                   </li>
                 </ul>
               </div>
