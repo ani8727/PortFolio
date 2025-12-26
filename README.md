@@ -1,19 +1,20 @@
-# Aniket's Portfolio
+# Aniket's PortFolio
 
 <div align="center">
 
 ## 🌐 Live Preview
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://ani8727.github.io/aniket/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://ani8727.github.io/PortFolio/)
 
-**[👉 Click Here to View Live Portfolio 👈](https://ani8727.github.io/aniket/)**
+**[👉 Click Here to View Live PortFolio 👈](https://ani8727.github.io/PortFolio/)**
 
 ---
 
 ### Quick Links
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?style=flat&logo=github)](https://github.com/ani8727/my-portfolio)
-[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=flat)](https://github.com/ani8727/my-portfolio/actions)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-PortFolio%20Repository-blue?style=flat&logo=github)](https://github.com/ani8727/PortFolio)
+[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=flat)](https://github.com/ani8727/PortFolio/actions)
+[![Deployment](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue?style=flat)](https://ani8727.github.io/PortFolio/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
 </div>
@@ -25,36 +26,39 @@ A modern, responsive portfolio website showcasing projects and skills as a Full 
 ## 🚀 Features
 
 - **Modern Design**: Clean and professional UI with smooth animations
-- **Responsive**: Optimized for all device sizes
-- **Project Showcase**: Interactive project cards with GitHub integration  
-- **Skills Display**: Comprehensive tech stack visualization
+- **Responsive**: Optimized for all device sizes (Mobile, Tablet, Desktop)
+- **Project Showcase**: 6 Interactive project cards with GitHub integration  
+- **Skills Display**: Comprehensive tech stack visualization with certificates
 - **Contact Form**: Functional contact form with EmailJS integration
-- **SEO Optimized**: Complete meta tags, sitemap, and favicon support
+- **SEO Optimized**: Complete meta tags, sitemap, favicon, and robots.txt support
+- **Performance Optimized**: Vite-based fast builds and development
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, Tailwind CSS
+- **Frontend**: React 19, Tailwind CSS, React Router
 - **Build Tool**: Vite
 - **Icons**: React Icons
 - **Email Service**: EmailJS
 - **Image Processing**: Jimp
 - **Code Quality**: ESLint
-- **Deployment**: GitHub Pages with GitHub Actions
+- **Deployment**: GitHub Pages with Vite
 
 ---
 
-## 🚀 Overview
+## 📋 PortFolio Overview
 
-This repository contains a modern, responsive portfolio built with React and Tailwind CSS. It showcases personal projects, technical skills, and contact functionality. The app is built with Vite for fast development and production builds.
+This repository contains a modern, fully-functional portfolio built with React and Tailwind CSS. It showcases personal projects, technical skills, certificates, and contact functionality. The app is built with Vite for lightning-fast development and optimized production builds.
 
 ## 🧰 Tech & Skills
 
-- **Frontend**: React 19, Vite, Tailwind CSS (utility-first styling)
+- **Frontend**: React 19, Vite, Tailwind CSS (utility-first styling), React Router DOM
 - **Languages**: JavaScript (ESNext), JSX
-- **Icons**: react-icons
-- **Image Tools**: Jimp (favicon generation), custom Node script for SVG project previews
-- **Docs / SEO**: meta tags, manifest.json, sitemap.xml, robots.txt
+- **Icons & Components**: react-icons, react-parallax-tilt
+- **Email Service**: EmailJS (client-side form submissions)
+- **Images & Assets**: SVG project previews, PNG logos, PDF certificates
+- **Docs / SEO**: meta tags, manifest.json, sitemap.xml, robots.txt, favicon
 - **Testing & Linting**: ESLint (config included)
+- **Build & Deployment**: Vite for fast builds, GitHub Pages for hosting
 
 ### Data Structures & Algorithms (DSA)
 
@@ -65,18 +69,39 @@ This portfolio emphasizes algorithmic problem solving and DSA fundamentals. Proj
 
 If you want the DSA section to contain live statistics or dynamic progress, we can integrate an API or a small JSON-based progress tracker.
 
-## 📂 Projects (Preview)
+## 📂 Projects Showcase
 
-Each project includes a short description, GitHub link and (where applicable) a demo link. Thumbnails are generated programmatically to maintain consistent aspect ratio and fit the project cards.
+The PortFolio showcases **6 major projects** with live links and GitHub repositories:
 
-- **Fitness App Microservice** — Microservices architecture using Spring Boot. Features user/workout management and REST APIs. (GH: `ani8727/fitness_app_microservice`)
-- **Patient Management Service** — Healthcare backend services with authentication and scheduling. (GH: `ani8727/Patient-Management-Service`)
-- **DSA Pattern Wise** — Collection of algorithmic problems organized by pattern with solutions. (GH: `ani8727/DSA-Pattern_Wise`)
-- **DSA Learning Hub** — Interactive learning platform and tutorials. (GH: `ani8727/DSA_Learing_Hub`)
-- **DSA Sheet - Topic Wise** — Practice tracker (visual) for topic-wise progress. (GH: `ani8727/DSA-Sheet---topic-wise`)
-- **Jarvis Assistant** — Voice assistant built with Python (speech → actions). (GH: `ani8727/jarvish_assistant`)
+1. **FitTrack - Full Stack Fitness App** 
+   - Full-stack fitness tracking application
+   - Tech: React, Java, Spring Boot
+   - Links: [GitHub](https://github.com/ani8727/FitTrack-Full_stack_fitness_app.git)
 
-If you want, I can expand each project's README with architecture diagrams, tech stacks, and deployment notes.
+2. **Patient Management Service** 
+   - Comprehensive healthcare management system
+   - Tech: Spring Boot, React, MySQL
+   - Links: [GitHub](https://github.com/ani8727/Patient-Management-Service) | [Demo](https://patient-management-demo.com)
+
+3. **DSA Pattern Wise** 
+   - Data Structures & Algorithms problems organized by patterns
+   - 350+ DSA problems with solutions
+   - Links: [GitHub](https://github.com/ani8727/DSA-Pattern_Wise)
+
+4. **DSA Learning Hub** 
+   - Interactive learning platform for DSA
+   - Comprehensive tutorials and practice
+   - Links: [GitHub](https://github.com/ani8727/DSA_Learing_Hub) | [Live](https://ani8727.github.io/DSA_Learing_Hub/)
+
+5. **DSA Sheet - Topic Wise** 
+   - Well-organized DSA practice tracker
+   - Topic categorized with difficulty levels
+   - Links: [GitHub](https://github.com/ani8727/DSA-Sheet---topic-wise)
+
+6. **Metro Route Finder** 
+   - Route finding application using Dijkstra's Algorithm
+   - Efficient path finding solution
+   - Links: [GitHub](https://github.com/ani8727/metro-route-finder.git)
 
 ---
 
@@ -85,8 +110,8 @@ If you want, I can expand each project's README with architecture diagrams, tech
 Clone, install and run locally:
 
 ```bash
-git clone https://github.com/ani8727/my-portfolio.git
-cd my-portfolio
+git clone https://github.com/ani8727/PortFolio.git
+cd PortFolio
 npm install
 npm run dev
 ```
@@ -99,67 +124,43 @@ npm run build
 npm run preview
 ```
 
----
+## 🌍 Deployment Instructions
 
-## ✅ Deployment Checklist & Recommendations
+### GitHub Pages Deployment
 
-Follow these steps before deploying to production to ensure reliability, SEO and best practices:
+The PortFolio is deployed on GitHub Pages at: **[ani8727.github.io/PortFolio](https://ani8727.github.io/PortFolio/)**
 
-1. Finalize `package.json` scripts (Vite is already configured):
-   - `dev`, `build`, `preview` are present.
-2. Confirm `public/manifest.json`, `sitemap.xml`, `robots.txt`, and favicon files exist (done).
-3. Verify all internal links are relative and use the correct `base` if deploying to a subpath.
-4. Test the production build locally with `npm run build` then `npm run preview`.
-5. Add environment configuration if you use secrets (none required for this static portfolio).
-6. Configure hosting platform (recommended):
-   - **Vercel**: auto-deploy from GitHub (recommended for React + Vite). Use default build command `npm run build` and output `dist`.
-   - **Netlify**: set build command `npm run build` and publish directory `dist`.
-   - **GitHub Pages**: requires adapter to deploy `dist` branch or use `gh-pages` package and set `homepage` in `package.json`.
-7. (Optional) Add GitHub Actions for CI — run `npm ci` and `npm run build` on pushes to `main`.
+**Deploy Steps:**
 
-Sample minimal GitHub Actions workflow to build on push (add to `.github/workflows/build.yml`):
+1. Build the project:
+   ```bash
+   npm run build
+   ```
 
-```yaml
-name: Build
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Install
-        run: npm ci
-      - name: Build
-        run: npm run build
-```
+2. The `dist` folder is ready for deployment
 
----
+3. Push to `main` branch:
+   ```bash
+   git add .
+   git commit -m "Update Project"
+   git push origin main
+   ```
 
-## 🔒 Security & Privacy
+4. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
 
-- No backend secrets stored in the repo. EmailJS is client-side; if you prefer, move EmailJS to a server endpoint for extra security.
+### Alternative Deployment Options
 
-## ✅ Health Checks I Performed
+- **Vercel**: Auto-deploy from GitHub (recommended)
+  - Connect repo to Vercel dashboard
+  - Build command: `npm run build`
+  - Output: `dist`
 
-- Confirmed `src` imports for images and resume are present.
-- Favicon and manifest updated; generated multiple icon sizes.
-- Project images generated and placed in `src/assets/projects`.
-- Removed unused asset files to reduce repo size.
-
----
-
-## Next Steps I Can Do For You
-
-- Add a CI workflow and automatic deploy to Vercel/Netlify.
-- Create per-project README files with architecture and deployment steps.
-- Integrate a small JSON-based DSA progress API to show live stats.
-- Add Lighthouse CI or GitHub Action to run accessibility/SEO checks.
-
-If you'd like any of the above, tell me which item to do next and I will implement it.
+- **Netlify**: Static hosting
+  - Build command: `npm run build`
+  - Publish directory: `dist`
 
 ---
 

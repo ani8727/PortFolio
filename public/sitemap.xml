@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ani8727.github.io/my-portfolio/</loc>
+    <loc>https://ani8727.github.io/PortFolio/</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ani8727.github.io/my-portfolio/#/project</loc>
+    <loc>https://ani8727.github.io/PortFolio/#/project</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ani8727.github.io/my-portfolio/#/skillset</loc>
+    <loc>https://ani8727.github.io/PortFolio/#/skillset</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ani8727.github.io/my-portfolio/#/contact</loc>
+    <loc>https://ani8727.github.io/PortFolio/#/contact</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ani8727.github.io/my-portfolio/#/resume</loc>
+    <loc>https://ani8727.github.io/PortFolio/#/resume</loc>
     <lastmod>2025-12-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
