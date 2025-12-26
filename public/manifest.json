@@ -4,13 +4,13 @@
   "description": "Personal portfolio showcasing projects in Java, Python, Data Structures & Algorithms, and Full Stack Development",
   "icons": [
     {
-      "src": "/aniket/aFav.png",
+      "src": "/PortFolio/aFav.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any"
     }
   ],
-  "start_url": "/aniket/",
+  "start_url": "/PortFolio/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#1F2937",
