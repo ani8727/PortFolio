@@ -4,17 +4,17 @@
 
 ## 🌐 Live Preview
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://ani8727.github.io/PortFolio/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://ani8727.github.io/aniket/)
 
-**[👉 Click Here to View Live PortFolio 👈](https://ani8727.github.io/PortFolio/)**
+**[👉 Click Here to View Live PortFolio 👈](https://ani8727.github.io/aniket/)**
 
 ---
 
 ### Quick Links
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-PortFolio%20Repository-blue?style=flat&logo=github)](https://github.com/ani8727/PortFolio)
-[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=flat)](https://github.com/ani8727/PortFolio/actions)
-[![Deployment](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue?style=flat)](https://ani8727.github.io/PortFolio/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-PortFolio%20Repository-blue?style=flat&logo=github)](https://github.com/ani8727/aniket)
+[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=flat)](https://github.com/ani8727/aniket/actions)
+[![Deployment](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue?style=flat)](https://ani8727.github.io/aniket/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
 </div>
@@ -110,8 +110,8 @@ The PortFolio showcases **6 major projects** with live links and GitHub reposito
 Clone, install and run locally:
 
 ```bash
-git clone https://github.com/ani8727/PortFolio.git
-cd PortFolio
+git clone https://github.com/ani8727/aniket.git
+cd aniket
 npm install
 npm run dev
 ```
@@ -128,7 +128,7 @@ npm run preview
 
 ### GitHub Pages Deployment
 
-The PortFolio is deployed on GitHub Pages at: **[ani8727.github.io/PortFolio](https://ani8727.github.io/PortFolio/)**
+The PortFolio is deployed on GitHub Pages at: **[ani8727.github.io/aniket](https://ani8727.github.io/aniket/)**
 
 **Deploy Steps:**
 

@@ -11,7 +11,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-indigo-500 to-blue-500",
-      pdfLink: "/PortFolio/certificates/business-analytics-data-visualization-forage.pdf",
+      pdfLink: "/aniket/certificates/business-analytics-data-visualization-forage.pdf",
       credentialLink: "https://verify.forage.com/Zcah5TjEnErFFpMuf",
     },
     {
@@ -21,7 +21,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-teal-500 to-cyan-500",
-      pdfLink: "/PortFolio/certificates/foundation-cloud-computing.pdf",
+      pdfLink: "/aniket/certificates/foundation-cloud-computing.pdf",
       credentialLink: "#",
     },
     {
@@ -31,7 +31,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-green-500 to-teal-400",
-      pdfLink: "/PortFolio/certificates/tcs-ion-career-edge.pdf",
+      pdfLink: "/aniket/certificates/tcs-ion-career-edge.pdf",
       credentialLink: "#",
     },
     {
@@ -41,7 +41,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-sky-500 to-indigo-500",
-      pdfLink: "/PortFolio/certificates/stress-management-virtual-assistant.pdf",
+      pdfLink: "/aniket/certificates/stress-management-virtual-assistant.pdf",
       credentialLink: "https://verify.onwingspan.com",
     },
     {
@@ -51,7 +51,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-purple-500 to-pink-500",
-      pdfLink: "/PortFolio/certificates/data-science-foundations-ibm.pdf",
+      pdfLink: "/aniket/certificates/data-science-foundations-ibm.pdf",
       credentialLink: "https://coursera.org/verify/KFLQHRF7US2C",
     },
     {
@@ -61,7 +61,7 @@ const Certificates = () => {
       type: "certificate",
       icon: <FaCertificate />,
       color: "from-indigo-500 to-blue-500",
-      pdfLink: "/PortFolio/certificates/certificate-6.pdf",
+      pdfLink: "/aniket/certificates/certificate-6.pdf",
       credentialLink: "https://verify.onwingspan.com",
     },
   ];
